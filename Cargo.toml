@@ -6,6 +6,7 @@ description = "Enhance pwd with color!"
 license = "MIT"
 homepage = "https://github.com/tdecker91/pretty_pwd"
 repository = "https://github.com/tdecker91/pretty_pwd"
+readme = "README.md"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
