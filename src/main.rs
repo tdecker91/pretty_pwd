@@ -6,9 +6,9 @@ use clap::Parser;
 use environment::{ShellEnv};
 
 #[derive(Parser, Debug)]
-#[command(name = "pwd-rust")]
+#[command(name = "pretty_pwd")]
 #[command(author = "Tyson D. <https://github.com/tdecker91>")]
-#[command(version = "1.0")]
+#[command(version = "1.0.0")]
 #[command(about = "Enchances the 'pwd' command", long_about = None)]
 struct Args {
     #[arg(short, long, value_name = "FILE")]
