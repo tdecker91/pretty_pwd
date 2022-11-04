@@ -1,30 +1,14 @@
 mod environment;
 mod fancier;
+mod config;
 
-use std::path::PathBuf;
-use clap::Parser;
 use environment::{ShellEnv};
-
-#[derive(Parser, Debug)]
-#[command(name = "pretty_pwd")]
-#[command(author = "Tyson D. <https://github.com/tdecker91>")]
-#[command(version = "1.0.0")]
-#[command(about = "Enchances the 'pwd' command", long_about = None)]
-struct Args {
-    #[arg(short, long, value_name = "FILE")]
-    config: Option<PathBuf>,
-
-    #[clap(long)]
-    verbose: bool,
-}
-
+use crate::environment::{Env};
 
 fn main() {
-    let _args = Args::parse();
-    // println!("verbose: {}", args.verbose);
-
     let env = ShellEnv{};
-    let output = fancier::get_fancy_working_directory(&env);
+    let cfg = config::get_config(env.home_path());
+    let output = fancier::get_fancy_working_directory(&env, &cfg);
 
     println!("{}", output);
 }
