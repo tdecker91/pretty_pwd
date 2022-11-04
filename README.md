@@ -1,5 +1,4 @@
 # Pretty pwd
-
 Simple tool to enhance the output of the `pwd` command.
 
 ## Boring pwd
@@ -12,10 +11,23 @@ you can optionally truncate the home directory.
 <img src="https://raw.githubusercontent.com/tdecker91/pretty_pwd/master/assets/ppwd_home.png" />
 
 ## Installation
-...coming soon
+Install on OSX using homebrew
+```bash
+> brew tap tdecker91/ppwd
+> brew install ppwd
+```
 
 ## Usage
-...coming soon
+run the ppwd command
+```
+> ppwd
+```
+
+OR, even better. Create an alias for pwd. Add this alias to your bashrc file.
+```
+> alias pwd="ppwd"
+> pwd
+```
 
 ### Customize
 customize the foreground and background colors of different path segments using a file in your home directory. `~/.ppwd`
