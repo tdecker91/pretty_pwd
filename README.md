@@ -16,3 +16,33 @@ you can optionally truncate the home directory.
 
 ## Usage
 ...coming soon
+
+### Customize
+customize the foreground and background colors of different path segments using a file in your home directory. `~/.ppwd`
+
+This is a config with the default values
+```toml
+truncate_home = false
+tilde = "blue"
+path_separator = "red"
+dir_name = "cyan"
+```
+
+Possible keys
+- truncate_home
+- tilde
+- tilde_bg
+- path_separator
+- path_separator_bg
+- dir_name
+- dir_name_bg
+
+Possible colors
+- red
+- yellow
+- green
+- blue
+- purple
+- white
+- black
+- cyan

@@ -17,7 +17,7 @@ fn colorize_string(value: String, color: &Option<String>) -> ColoredString {
     Some("white") => value.white(),
     Some("black") => value.black(),
     Some("cyan") => value.cyan(),
-    _ => value.white()
+    _ => value.normal()
   }
 }
 
