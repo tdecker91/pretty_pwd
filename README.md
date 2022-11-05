@@ -1,6 +1,8 @@
 # Pretty pwd
 Simple tool to enhance the output of the `pwd` command.
 
+This tool was mostly an opportunity for me to learn the basics of Rust. Use if you'd like. Open to any contributions you'd see fit.
+
 ## Boring pwd
 <img src="https://raw.githubusercontent.com/tdecker91/pretty_pwd/master/assets/pwd.png" />
 
